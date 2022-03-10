@@ -45,6 +45,9 @@ if(isset($_POST['sub'])){
                     <td>
                         <input type="submit" name="sub" value="submit">
                     </td>
+                    <td>
+                        <a href="cadastro.php">Cadastra</a>
+                    </td>
                 </tr>
             </table>
     </body>
