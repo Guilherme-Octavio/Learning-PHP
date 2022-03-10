@@ -13,12 +13,12 @@ if(isset($_POST['sub'])){
       header ('location:home.php');
    }
    else{
-       echo 'username or password does not exist';
+       header('location: ../index.html');
    }
   
 }
 ?>
-<html>
+<!-- <html>
       
     <head>
         <meta charset="UTF-8">
@@ -26,7 +26,7 @@ if(isset($_POST['sub'])){
     </head>
     <body>
         <h1>sim</h1>
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST"  enctype="multipart/form-data">
             <table>
                 
                 <tr>
@@ -51,4 +51,4 @@ if(isset($_POST['sub'])){
                 </tr>
             </table>
     </body>
-</html>
+</html> -->

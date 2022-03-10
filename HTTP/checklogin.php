@@ -2,6 +2,6 @@
 
 if(!isset($_SESSION['id']))
 {
-    header('Location:login.php');
+    header('Location:../index.html');
 }
 ?>

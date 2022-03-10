@@ -1,12 +1,12 @@
 <?php
 session_start();
-
+//unset($_SESSION[#name#])
 if(isset($_POST['destroy']))
 {
     session_destroy();
     echo "session destruida";
 }if (isset($_POST['unset'])) {
-    session_unset();
+    session_unset(); 
     echo "session unset";
 }
 ?>
