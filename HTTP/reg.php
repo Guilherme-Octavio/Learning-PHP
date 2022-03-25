@@ -46,18 +46,18 @@ if(isset($_POST['sub'])){
                         city
                         <select name="city">
                             <option value="">-select-</option>
-                           <?php
-                           $sqlcity = mysqli_query($con, "select * from city");
-
-                           while($item = mysqli_fetch_assoc($sqlcity)){
-                               $nomeItem = utf8_encode($item['nameCity']);
-                               $idCity = $item['idCity'];
-                               echo "
-                               <option value=$nomeItem>$nomeItem</option>
-                               "
-                           }
-                           
-                           ?>
+                            <?php
+                            $sqlCity= mysqli_query($con, "select * from city");
+                                                        
+                            while($item = mysqli_fetch_assoc($sqlCity))
+                            {
+                                $nomeItem = utf8_encode($item['nameCity']);
+                                $idCity = $item['idCity'];
+                                echo "                                
+                                    <option value=$nomeItem>$nomeItem</option>                                
+                                ";
+                            }
+                            ?>
                     </td>
                 </tr>
                 <tr>
