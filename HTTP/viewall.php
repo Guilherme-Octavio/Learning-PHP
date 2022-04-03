@@ -25,6 +25,7 @@ while($f=  mysqli_fetch_assoc($qu)){
             <?php echo $f['username']?>
         </td>
     </tr>
+    
     <?php
 }
 ?>
