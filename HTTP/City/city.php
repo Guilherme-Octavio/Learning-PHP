@@ -1,6 +1,6 @@
 <?php
-    include 'connect.php';
-    include 'checklogin.php';
+    include '../connect.php';
+    include '../checklogin.php';
 ?>
 <html>
 <head>

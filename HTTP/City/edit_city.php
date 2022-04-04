@@ -1,6 +1,6 @@
 <?php
-include 'connect.php';
-include 'checklogin.php';
+include '../connect.php';
+include '../checklogin.php';
 $id = $_GET['id'];
 $nameCity = $_GET['cityName'];
 

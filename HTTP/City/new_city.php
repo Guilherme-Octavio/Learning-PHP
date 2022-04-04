@@ -1,6 +1,6 @@
 <?php
-include'connect.php';
-include'checkLogin.php';
+include '../connect.php';
+include '../checkLogin.php';
 if(isset($_POST['sub'])){
     $nameCity=$_POST['nameCity'];
     $i = "insert into city(nameCity) values('$nameCity')";
