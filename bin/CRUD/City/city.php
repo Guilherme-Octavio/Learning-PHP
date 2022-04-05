@@ -92,7 +92,8 @@ if(isset($_POST['adicionar']))
     $i = "insert into city(nameCity) values('$add');";
     mysqli_query($con, $i);
 }
-if(isset($_POST['editar_city'])){
+$a = isset($_POST['editar_city']);
+if($a){
     $newName = $_POST['newName'];
     $id = $_POST['id'];
     $i = "update city set nameCity = '$newName' where idCity='$id'"; 

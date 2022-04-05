@@ -13,7 +13,7 @@ if(isset($_POST['sub'])){
       header ('location:home.php');
    }
    else{
-       header('location: ../index.html');
+       header('location: index.html');
    }
   
 }

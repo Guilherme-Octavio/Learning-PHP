@@ -20,7 +20,7 @@ $nameCity = $_GET['cityName'];
         <label> Selecione a cidade: </label><br>
         <select name="city">
         <?php
-        echo "<option value=$nameCity>$nameCity</option>";
+        echo "<option value=$>$nameCity</option>";
 
         $sqlCity= mysqli_query($con, "select * from city");
                                     
@@ -43,6 +43,7 @@ $nameCity = $_GET['cityName'];
 </html>
 
 <?php
+
 if(isset($_POST['edit'])){
     $newCityName = $_POST['newName'];
     $i = "update city set nameCity = '$newCityName' where idCity='$id'";
