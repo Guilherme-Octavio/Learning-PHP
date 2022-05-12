@@ -50,7 +50,7 @@
                             <?php echo $f['nomeProduto'];?>
                         </td>
                         <td>
-                            <?php echo $f['precoProduto'];?>
+                            R$<?php echo $f['precoProduto'];?>
                         </td>
                         <td>
                             <?php echo $f['nomeCategoria'];?>
@@ -111,6 +111,7 @@ if(isset($_POST['adicionar']))
     $add_categoria = $_POST['categoria'];
     $i = "insert into produto(nomeProduto, precoProduto, fk_idCategoria) values('$add_nome', '$add_preco', '$add_categoria');";
     mysqli_query($con, $i);
+    header("Refresh:1");
 }
 
 ?>
